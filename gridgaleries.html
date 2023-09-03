@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridpintereststyle</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0.5rem;
+        }
+
+        .grid>img {
+            width: 100%;
+            aspect-ratio: 2/3;
+            /*width:height*/
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        img:hover{
+            transform: rotateY(360deg);
+            transition:ease-in-out 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <img src="https://picsum.photos/1200/800?random=1">
+        <img src="https://picsum.photos/1200/800?random=2">
+        <img src="https://picsum.photos/1200/800?random=3">
+        <img src="https://picsum.photos/1200/800?random=4">
+        <img src="https://picsum.photos/1200/800?random=5">
+        <img src="https://picsum.photos/1200/800?random=6">
+        <img src="https://picsum.photos/1200/800?random=7">
+        <img src="https://picsum.photos/1200/800?random=8">
+        <img src="https://picsum.photos/1200/800?random=9">
+        <img src="https://picsum.photos/1200/800?random=10">
+        <img src="https://picsum.photos/1200/800?random=11">
+        <img src="https://picsum.photos/1200/800?random=12">
+    </div>
+</body>
+</html>
